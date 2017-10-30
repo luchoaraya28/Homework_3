@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<!--Se incorporan los archivos css y js a usar-->
+<head>
+    <meta charset="utf-8">
+    <title>Homework 3</title>
+    <link rel="stylesheet" type="text/css" href="css/triangulo.css">
+    <script src = "js/triangulo.js"></script>
+</head>
+
+<body>
+
+    <!--Barra de navegación-->
+    <div class="navbar">
+        <nav>
+            <a href="triangulo.html" class="h">Triángulo</a>
+            <a href="polinomio.html" class="h">Polinomio</a>
+        </nav>
+    </div>
+
+    <!--Título-->
+    <h1 class="title">Área de un triángulo</h1>
+    <p>
+
+        <!--Inputs para los calculos-->
+    <div class="inputs">
+        Base: <input type="text" id="base" size="4" class="textbox">
+        Altura: <input type="text" id="altura" size="4" class="textbox">
+        <br>
+    </div>
+
+    <!--Se llama la función área-->
+    <button type="button" class="button" onclick="Area()">Calcular</button>
+    </p>
+
+    <!--salidas y gráfico-->
+    <canvas id = "canvas" class="salida" width="150" height="150"></canvas>
+    <p id="salida1" class="salida"></p>
+    <p id="salida2" class="salida"></p>
+
+</body>
+
+</html>
